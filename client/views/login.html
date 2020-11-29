@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" href="/libs/ydui/css/ydui.css?rev=a4b9d6e8c9c1cae7ea4676f911682af7" />
+    <link rel="stylesheet" href="/libs/ydui/css/demo.css" />
+
+</head>
+
+<body style="background-color:#fff;">
+    <section class="g-flexview">
+        <div class="g-scrollview">
+            <div style="height:30px;background-color:#fff;">
+
+            </div>
+            <div style="height:80px;background-color:#fff;text-align:center;line-height:80px;">
+
+                <span style="font-family:'Microsoft YaHei';font-size:20px;display:inline;vertical-align:middle;">用户登录</span>
+            </div>
+            <div style="padding:30px 10px 30px 10px;border:solid 0 #fff;">
+                <div class="cell-item">
+
+                    <div class="cell-left">
+                        <p class="text-muted" id="txtInfo" style="font-family:'Microsoft YaHei'; color:red;font-size:13px;"></p>
+                    </div>
+
+                </div>
+
+                <div class="cell-item">
+                    <div class="cell-left"><i class="cell-icon icon-ucenter"></i></div>
+                    <div class="cell-right">
+                        <input type="text" style="font-size:16px;font-family:'Microsoft YaHei'" class="cell-input" placeholder="手机号/用户名" autocomplete="off" id="txtuid" />
+                    </div>
+                </div>
+                <div class="cell-item">
+                    <div class="cell-left"><i class="cell-icon icon-shield"></i></div>
+                    <div class="cell-right">
+                        <input type="password" style="font-size:16px;font-family:'Microsoft YaHei'" class="cell-input" placeholder="密码" autocomplete="off" id="txtpwd" />
+                    </div>
+                </div>
+                <a class="cell-item" href="javascript:;">
+                    <div class="cell-left"></div>
+                    <div class="cell-right">
+                        <a>注册</a>
+                    </div>
+                </a>
+                <div class="cell-item">
+                    <button type="button" id="btnLogin" class="btn-block btn-primary" style="background-color:#0578c6;font-size:18px;font-family:'Microsoft YaHei'">登 录</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="/libs/ydui/js/jquery2.1.4.min.js"></script>
+    <script src="/libs/ydui/js/ydui.js"></script>
+    <script src="/libs/ydui/js/ydui.flexible.js"></script>
+    <script src="/dist/login.js"></script>
+
+</body>
+
+</html>

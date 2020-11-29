@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注销</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" href="/libs/ydui/css/ydui.css?rev=a4b9d6e8c9c1cae7ea4676f911682af7" />
+    <link rel="stylesheet" href="/libs/ydui/css/demo.css" />
+</head>
+
+<body>
+
+    <section class="g-flexview">
+
+
+        <div class="g-scrollview">
+            <header class="m-navbar navbar-fixed">
+
+                <div class="navbar-center"><span class="navbar-title">我的</span></div>
+
+            </header>
+
+            <div class="m-cell" style="margin-top:47px;">
+                <a href="#" class="cell-item">
+                    <div class="cell-left"><i class="icon-ucenter" style="font-size:1.5em;"></i>&nbsp;&nbsp;</div>
+                    <div class="cell-left">职工姓名</div>
+                    <div class="cell-right" id="empname"></div>
+                </a>
+                <a href="#" class="cell-item">
+                    <div class="cell-left"><i class="icon-ucenter" style="font-size:1.5em;"></i>&nbsp;&nbsp;</div>
+                    <div class="cell-left">部门信息</div>
+                    <div class="cell-right" id="deptname"></div>
+                </a>
+                <a href="#" class="cell-item">
+                    <div class="cell-left"><i class="icon-phone1" style="font-size:1.5em;"></i>&nbsp;&nbsp;</div>
+                    <div class="cell-left">手机号码</div>
+                    <div class="cell-right" id="cellphone"></div>
+                </a>
+                <a href="/views/chgpwd.html" class="cell-item">
+                    <div class="cell-left"><i class="icon-compose" style="font-size:1.5em;"></i>&nbsp;&nbsp;</div>
+                    <div class="cell-left">密码修改</div>
+                    <div class="cell-right cell-arrow"></div>
+                </a>
+
+            </div>
+
+            <aside>
+                <button type="button" id="btnLogout" class="btn-block btn-hollow" style="font-size:1.5em;">退出登录</button>
+            </aside>
+            <footer class="m-tabbar tabbar-fixed">
+                <a href="/index.html" class="tabbar-item tabbar-active">
+                    <span class="tabbar-icon">
+                    <img src="/libs/ydui/images/工作.png" />
+                    <span class="badge badge-danger">2</span>
+                    </span>
+                    <span class="tabbar-txt">首页</span>
+                </a>
+                <a href="/views/me.html" class="tabbar-item">
+                    <span class="tabbar-icon">
+                    <img src="/libs/ydui/images/我的.png" />
+                </span>
+                    <span class="tabbar-txt">关于我</span>
+                </a>
+
+            </footer>
+
+        </div>
+
+    </section>
+    <script src="/libs/ydui/js/jquery2.1.4.min.js"></script>
+    <script src="/libs/ydui/js/ydui.js"></script>
+    <script src="/libs/ydui/js/ydui.flexible.js"></script>
+    <script src="/dist/me.js"></script>
+</body>
+
+</html>

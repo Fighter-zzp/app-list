@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "tsc",
+            "label": "tsc_server",
+            "path": "server/",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "tsc",
+            "label": "tsc_client",
+            "path": "client/",
+            "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "start",
+            "label": "start_client",
+            "path": "client/",
+            "problemMatcher": [],
+            "dependsOn": [
+                "tsc_client"
+            ]
+        },
+    ]
+}

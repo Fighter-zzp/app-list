@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "esnext",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "sourceRoot": "src",
+        "outDir": "dist",
+        "sourceMap": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules","dist","libs"
+    ]
+}

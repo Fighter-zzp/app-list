@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NavBar</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <link rel="stylesheet" href="../css/ydui.css?rev=a4b9d6e8c9c1cae7ea4676f911682af7"/>
+    <link rel="stylesheet" href="../css/demo.css"/>
+    <script src="../js/ydui.flexible.js"></script>
+    <script src="../js/jquery2.1.4.min.js"></script>
+    <script src="../js/ydui.js"></script>
+</head>
+<body>
+<section class="g-flexview">
+
+    <header class="m-navbar navbar-fixed">
+        <a href="#" class="navbar-item"><i class="back-ico"></i></a>
+        <div class="navbar-center"><span class="navbar-title">语音朗读</span></div>
+    </header>
+
+    <section class="g-scrollview">
+
+        <aside class="demo-tip">
+        </aside>
+        <aside class="demo-tip"></aside>
+        <aside class="demo-tip"></aside>
+       
+        <div class="m-cell">
+            <div class="cell-item">
+                <div class="cell-right">
+                    <textarea id="txt" class="cell-textarea" placeholder="">锄禾日当午，汗滴禾下土，谁知盘中餐，粒粒皆辛苦</textarea>
+                </div>
+            </div>
+            <ul class="m-grids-2">
+                <li class="grids-item">
+                    <div class="m-button">
+                        <button type="button" id="btnRead" class="btn-block btn-primary">朗读</button>
+                    </div>
+                </li>
+                <li class="grids-item">
+                    <div class="m-button">
+                        <input type="submit" class="btn-block btn-disabled" value="disabled" />
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+       
+
+       
+       
+
+    </section>
+
+</section>
+    <script>
+    $(document).ready(function () {
+        var dialog = window.YDUI.dialog;
+        dialog.alert("hello");
+        $("#btnRead").on("click", function () {
+            var text = $("#txt").val();
+            dialog.alert(text);
+            window.kz.TextSpeech(text);
+        });
+        function show(msg) {
+            alert(msg);
+            //dialog.alert(msg);
+        }
+    });
+    </script>
+</body>
+</html>
